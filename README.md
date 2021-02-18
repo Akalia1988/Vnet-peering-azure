@@ -4,8 +4,11 @@ Issues we had before implementing VNET peering.
 our databases are living on VMs within different regions our API Applications and azure functions were associated to different VNET hence they couldnt communicate with our backend database unless we whitelist public IP's which were not an option. 
 
 •	IP Address whitelisting through IaaS VMs’s Network interface is not scalable
+
 •	All PaaS and IaaS provisioned resources are publicly exposed
+
 •	SQL database instances running on VM’s “should” be migrated to DaaS/PaaS equivalents
+
 •	Publicly expose API Management interface that supports internally accessible service backends.
 
 Solution was proposed is below along with architectural design. 
